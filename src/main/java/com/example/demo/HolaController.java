@@ -9,6 +9,6 @@ public class HolaController {
 
     @GetMapping("/hola")
     public String hola(@RequestParam(defaultValue = "mundo") String nombre) {
-        return "Hola, mundo!";
+        return "Hola, " + nombre + "!";
     }
 }
